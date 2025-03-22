@@ -1,126 +1,101 @@
-#4. seminar
+# 4. seminar
 [Seminari video, kahjuks helita](https://www.youtube.com/watch?v=wkY7_lxf5Es)
 
-## Seminari sisu
-- Kodutööde tagasiside
-- CSS-i eeltöötlejad (preprotsessors)
-- SCSS
-- Bootstrap
-- Kodutöö tutvustus
+## Sisukord
+- [Seminari ülevaade](#4-seminar)
+- [Sessioonid](#sessioon-1-sissejuhatus-ja-kodutööde-tagasiside)
+  - [1. Sissejuhatus ja kodutööde tagasiside](#sessioon-1-sissejuhatus-ja-kodutööde-tagasiside)
+  - [2. CSS-i eeltöötlejad](#sessioon-2-css-i-eeltöötlejad)
+  - [3. SCSS tutvustus ja seadistus](#sessioon-3-scss-tutvustus-ja-seadistus)
+  - [4. BEM metoodika](#sessioon-4-bem-metoodika)
+  - [5. Bootstrap](#sessioon-5-bootstrap)
+- [Kodutöö](#kodutöö)
 
-### Sissejuhatus (5 min)
-### Kodutööde tagasiside (30 min) 
-- Peamised puudused kodutöödes (10 min)
-- Kuidas jagada kaasõppijatele kodutööde tagasisidet linterid ja AI (20 min)
+## Sessioon 1: Sissejuhatus ja kodutööde tagasiside
+- **Kestus:** 35 minutit
+- **Eesmärk:** Tutvustada seminari ja anda tagasisidet kodutöödele
+- **Teemad:**
+  - Seminari sisu tutvustus
+  - Peamised puudused kodutöödes (10 min)
+  - Kuidas jagada kaasõppijatele kodutööde tagasisidet linterid ja AI (20 min)
 
-### Preprotsessorid (5 min)
-    - Mis on preprotsessorid? (näited)
-    CSS preprotsessorid on tööriistad, mis võimaldavad kirjutada CSS koodi laiendatud süntaksiga, mis hiljem kompileeritakse tavaliseks CSS-iks. Preprotsessorid lisavad CSS-ile funktsionaalsust, muutes koodi kirjutamise efektiivsemaks ja paremini hallatavaks.
-
-    **Peamised eelised:**
+## Sessioon 2: CSS-i eeltöötlejad
+- **Kestus:** 5 minutit
+- **Eesmärk:** Tutvustada CSS preprotsessorite põhimõtteid
+- **Teemad:**
+  - Mis on preprotsessorid ja milleks neid kasutatakse
+  - Peamised eelised:
     - Muutujate kasutamine
-    - Pesastatud reeglid (nesting) – nüüd ka css-is
+    - Pesastatud reeglid (nesting) – nüüd ka CSS-is
     - Funktsioonid ja operaatorid
     - Mixinid ja laiendused
     - Koodi jagamine mooduliteks
 
-#### SCSS
-##### Tutvustus ja seadistus oma arvutis (40 min)
-**Eeldused**
-- Node.js installitud (kõige lihtsam)
-- VS Code (vms IDE)
+## Sessioon 3: SCSS tutvustus ja seadistus
+- **Kestus:** 40 minutit
+- **Eesmärk:** Õppida SCSS-i põhiomadusi ja seadistust
+- **Teemad:**
+  - Eeldused: Node.js ja VS Code
+  - SCSS kui CSS preprotsessor
+  - Koodi kompileerimine SCSS-ist CSS-iks
+  - Põhiomadused:
+    - CSS-iga ühilduv süntaks
+    - Muutujate defineerimine
+    - Pesastatud reeglid
+    - Matemaatilised operatsioonid
+    - Värvidega töötamise funktsioonid
+  - Partials, Mixinid, Funktsioonid ja Moodulid
+- **Praktiline ülesanne:** Väikerakenduse alguse loomine värvi ja suuruse muutujatega ning "partialidega"
 
-**SCSS (Sassy CSS ehk Syntactically Awesome Style Sheet)**
-- SCSS kui CSS preprotsessor, mis laiendab CSS-i funktsionaalsust
-- Koodi kompileerimine SCSS-ist CSS-iks
-https://sass-lang.com/
+## Sessioon 4: BEM metoodika
+- **Kestus:** 20 minutit
+- **Eesmärk:** Tutvustada BEM nimetamise konventsiooni
+- **Teemad:**
+  - Block-Element-Modifier nimetamise konventsioon
+  - Selektorite struktureerimine SCSS-is BEM metoodika järgi
+  - Ampersandi (`&`) kasutamine pesastatud reeglites BEM-i implementeerimiseks
 
-**SCSS Põhiomadused**
-- CSS-iga ühilduv süntaks
-- Muutujate defineerimine `$` sümboliga (nt `$primary-color`, `$spacing`)
-- Pesastatud reeglid (nesting) koodi struktuuri paremaks organiseerimiseks
-- Matemaatilised operatsioonid (nt `calc($spacing * 0.5)`)
-- Värvidega töötamise funktsioonid (nt `darken()`, `lighten()`)
+## Sessioon 5: Bootstrap
+- **Kestus:** 30 minutit
+- **Eesmärk:** Tutvustada Bootstrapi raamistikku
+- **Teemad:**
+  - Bootstrapi seadistamine
+  - Üldine tutvustus ja põhielemendid
 
-**Partials**
-- Failinimed algavad alakriipsuga (nt `_variables.scss`, `_mixins.scss`)
-- Koodi jagamine loogilisteks mooduliteks
-- Importimine `@use` direktiiviga nimeruumidega
-- Koodi taaskasutatavuse ja hooldatavuse parandamine
-
-**Mixinid**
-- Defineerimine `@mixin` direktiiviga
-- Importimine `@use`direktiiviga
-- Kasutamine `@include` direktiiviga
-- Parameetrite kasutamine (nt `@mixin button-style($bg-color)`)
-- Koodi kordumise vähendamine
-- Koodi parema hallatavuse tagamine
-
-**SCSS Funktsioonid**
-- Kohandatud funktsioonide loomine `@function` direktiiviga
-- Sisseehitatud funktsioonide kasutamine (nt `darken()`, `lighten()`)
-- Tingimuslausete kasutamine funktsioonides (`@if`, `@else`)
-- Dünaamiliste väärtuste loomine
-
-**Sass Moodulid**
-- Sisseehitatud moodulite kasutamine (`sass:math`, `sass:color`)
-- Moodulite importimine `@use` direktiiviga
-- Moodulite funktsioonide kasutamine (nt `math.div()`)
-
-#### Iseseisev töö tunnis (40 min)
-- Loo näidise järgi värvi ja suuruse muutujatega ning "partialidega" väikerakenduse algus. Hilisem osa jääb ühels kodutööks.  
-[Ülesande kirjeldus](work/simple-card/README.md)
-![väikerakenduse näide](card-example.png)
-
-#### BEM Metoodika (20 min)
-- Block-Element-Modifier nimetamise konventsioon
-- Selektorite struktureerimine SCSS-is BEM metoodika järgi
-- Ampersandi (`&`) kasutamine pesastatud reeglites BEM-i implementeerimiseks 
-
-#### Bootstrap (30 min)
-Seminaris tutvutakse sissejuhatava osaga, mis loob eeldused koduse iseseisva töö jaoks – bootstrapi seadistamine ja üldine tutvustus.
-
-## Koduse töö selgitus (20 min)
+## Kodutöö
 ### Üldine
 - Uued tudengipaarid (code review) failis [studen_pairs.md](student_pairs.md)
 - Refleksiooni kohta (`protsess.md`)
 
-### 1. Seminaris alustatud kaardiga html-lehe lõpetamine.
-![kaardinäidis](card-example.png)
-[**Ülesande juhend**](work/simple-card/README.md)
+### 1. Seminaris alustatud kaardiga html-lehe lõpetamine
+- [Ülesande juhend](work/simple-card/README.md)
+- Lõpetada seminaris alustatud kaardiga veebileht
 
-### 2. Seekordne teine ülesanne on mõneti keerukam – iseseisvalt Bootstrapi tundma õppimine
-Selleks tuleb teil luua aadressil https://www.figma.com/design/6KOklRts6YVhXPHStdvocg/homework?node-id=0-1&t=4wtKuX6sGwp9xDvN-1 oleva madalakvaliteedilise visandi järgi päris leht.  Kasutage samu sisuosasid, mis teil juba CV-s olemas. Mõned asja tulevad lisaks.  
-Kui Figma linki ei näe, ![siis pilti näeb ka siit.](wireframe.jpg)
+### 2. Bootstrapi iseseisvalt tundma õppimine
+- Luua Figma visandi järgi päris leht, kasutades Bootstrap raamistikku
+- Kasutada CV-s olevaid sisuosasid
+- Põhimõtted:
+  - Värve muutma ei pea, võib kasutada Bootstrapi vaikimisi värve
+  - Olulised märksõnad: Containers, Grid, Images, Card, Buttons, Navbar, Display, Colors, Background, Flex jne
 
-**NB! See on visand, mitte lõpptulemus. Ehk, et te peate ikka selles võtmes, mida Bootstrap pakub tegema**
+### Foorum ja refleksioon
+- Foorumis osalemine GitHubis: https://github.com/tluhk/Veebirakendused-ja-nende-loomine/discussions/2
+- `protsess.md` failis lisada ajakulu ja protsessikirjeldus (või märkus, et peamine osa kirjutati foorumisse)
 
-[Detailsem kirjeldus](yl_kirjeldus.md)
+## Hindamismaatriks kodutööle
 
-- värve muutma ei pea, võib kasutada Bootstrapi vaikimis värve.
-- juhend asub aadressil: https://getbootstrap.com/docs/5.3/layout/containers/  
-Vasakus servas asuvast menüüst leiate vajaliku.   
-Märksõnad, milles lähtuda, mida otsida:
-- Containers
-- Grid
-- Images
-- Gard
-- Buttons
-- Navbar
-- Display
-- Colors
-- Background
-- Flex
-- jne
+See hindamismaatriks aitab hinnata kodutöö erinevaid aspekte järgneva skaalaga:
+- **Puudub (0p):** lahendus puudub või ei ole esitatud.
+- **On olemas (3p):** lahendus on esitatud, kuid on mitte täielikult või minimaalselt realiseeritud.
+- **On tehtud nii nagu peab (4p):** lahendus vastab täielikult ülesande kirjeldatud nõuetele.
+- **On lisatud omalt poolt lisasid (5p):** tööle on lisatud täiendavaid ja läbimõeldud lahendusi, mis tõstavad töö kvaliteeti.
 
-Samm-sammuline juhis seminaris tehtu kohta, [**on ka siin**](workbootstrap/bootstrap-cdn/README.md)
+| Kriteerium | Puudub (0p) | On olemas (3p) | On tehtud nii nagu peab (4p) | On lisatud omalt poolt lisasid (5p) |
+| ---------- | ------ | ------------- | -------------------------- | ---------------------------------- |
+| **SCSS kaardi ülesanne** | Ülesanne on tegemata või poolik. | Kaardi põhistruktuur on olemas, kuid SCSS kasutamine on puudulik või sisaldab vigu. | SCSS on korrektselt struktureeritud, muutujad ja partialid on kasutatud vastavalt nõuetele. | Lisatud on täiendavaid funktsionaalsusi (nt hover efektid, mixinid, funktsioonid) või visuaalseid täiustusi. |
+| **Bootstrap leht** | Bootstrap leht on tegemata või olulised osad puuduvad. | Põhikomponendid on olemas, kuid paigutus või responsive disain pole täielik. | Leht järgib Figma visandit, on responsive ja kasutab korrektselt Bootstrapi komponente. | Lisatud on täiendavaid interaktiivseid elemente, animatsioone või kohandatud Bootstrap komponente. |
+| **Refleksioon ja ajakulu** | Refleksioon ja ajakulu dokumentatsioon puudub. | Refleksioon või ajakulu on kirja pandud, kuid pinnapealselt. | Refleksioon ja ajakulu on põhjalikud ning informatiivse sisuga. | Refleksioon sisaldab sügavat analüüsi, konstruktiivseid ettepanekuid või lahendusi kogetud probleemidele. |
+| **Git kasutamine** | Failid on lisatud muul viisil kui Git või töövoog pole selge. | Git on kasutatud, kuid commit sõnumid pole informatiivsed. | Git töövoog on selge ja commit sõnumid on informatiivsed. | Git töövoog on professionaalne, hästi struktureeritud ja järgib häid tavasid. |
+| **GitHub foorum (boonus)** | Foorumis pole osaletud. | Foorumis on tehtud minimaalselt üks postitus. | Foorumis on aktiivselt osaletud, jagades kogemusi ja aidates teisi. | Foorumis on loodud väärtuslikku sisu, mis on aidanud oluliselt kaasa kogukonna õppimisele. |
 
-#### NB! Ülesande lahendamise osaks on seekord ka foorum githubis, kuhu te peate oma avastused kamba peale kirja saama. Mõte on selles, et kui keegi lahenduse leiab, siis ta jagab seda teistega või kui keegi on hädas, siis ta püstitab vastava kommentaariga teema ja teised eeldatavasti vastavad talle. 
-
-Nii on lihtsam kui omaette pusides ja mitte hakkama saades.
-
-Foorumi aadress: https://github.com/tluhk/Veebirakendused-ja-nende-loomine/discussions/2
-
-Alustage ülalt alla lahendamist – navigatsioon, hero, muud plokid. Kui ei jõua kõike valmis, pole probleemid. Oluline on kogemuse jagamine foorumis ja töö käigus õppimine.
-
-`protsess.md` ka seekord koht, kuhu lisage oma ajakulu ja protsessikirjeldus, kuid seekord, kes on aktiivsemalt osalenud githubi foorumis, võib protsessi faili lisada vaid märkuse, et kirjutas peamise osa foorumisse. Ajakulu on siiski vajalik. Refleksiooni võite muidugi lisada rahulolematuse või rahulolu üldise töökorraldusega, mida nt ei taha mujal jagada.
+Maksimumtulemus põhiülesannete eest on 20 punkti. GitHub foorumis osalemine võib anda täiendavalt kuni 5 boonuspunkti.
