@@ -2,7 +2,7 @@
 [Seminari video, kahjuks helita](https://www.youtube.com/watch?v=wkY7_lxf5Es)
 
 ## Seminari eesmärgid
-- Tutvustada CSS eeltöötlejate põhimõtete ja eelistega
+- Tutvuda CSS eeltöötlejate põhimõtete ja eelistega
 - Õppida SCSS-i kasutamist ja struktuuri veebiarenduses
 - Tutvuda BEM metoodikaga koodi organiseerimiseks
 - Anda sissejuhatus Bootstrap raamistikku
