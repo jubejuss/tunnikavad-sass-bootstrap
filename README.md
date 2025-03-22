@@ -7,6 +7,8 @@
 - Tutvuda BEM metoodikaga koodi organiseerimiseks
 - Anda sissejuhatus Bootstrap raamistikku
 
+Seminar on aluseks järgmisele seminarile: [Seminari 5](jarelseminar/README.md)
+
 ## Õpiväljundid
 - Õppija selgitab CSS eeltöötlejate eeliseid traditsioonilise CSS-i ees
 - Tunneb SCSS-i põhiomadusi, süntaksit ja struktuuri
