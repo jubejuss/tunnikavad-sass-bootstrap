@@ -1,0 +1,85 @@
+// Fondid ja tüpograafia
+$font-family-sans-serif: 'Roboto', system-ui, -apple-system, "Segoe UI", sans-serif;
+$font-family-monospace: 'Roboto Mono', SFMono-Regular, Menlo, monospace;
+
+$font-size-base: 2rem;
+$font-size-sm: $font-size-base * 0.875;
+$font-size-lg: $font-size-base * 1.25;
+
+$h1-font-size: $font-size-base * 2.5;
+$h2-font-size: $font-size-base * 2;
+$h3-font-size: $font-size-base * 1.75;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $font-size-base;
+
+$font-weight-lighter: 200;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$font-weight-bolder: 900;
+
+$line-height-base: 1.6;
+$line-height-sm: 1.4;
+$line-height-lg: 1.8;
+
+// Põhi- ja teisesed värvid
+$primary: #1d1b45;
+$secondary: #d3b51c;
+$success: #198754;
+$info: #0dcaf0;
+$warning: #ffc107;
+$danger: #dc3545;
+$light: #f8f9fa;
+$dark: #212529;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark
+);
+
+// Ääreraadiused
+$border-radius: 0.25rem;
+$border-radius-sm: 0.2rem;
+$border-radius-lg: 0.5rem;
+$border-radius-pill: 50rem;
+
+// Nuppude ääreraadiused
+$btn-border-radius: 0.25rem;
+$btn-border-radius-sm: 0.2rem;
+$btn-border-radius-lg: 0.5rem;
+
+// Kaartide ääreraadiused
+$card-border-radius: 0.5rem;
+
+// Nuppude suurused
+$btn-padding-y: 0.5rem;
+$btn-padding-x: 1rem;
+$btn-font-size: $font-size-base;
+$btn-line-height: $line-height-base;
+
+$btn-padding-y-sm: 0.25rem;
+$btn-padding-x-sm: 0.5rem;
+$btn-font-size-sm: $font-size-sm;
+
+$btn-padding-y-lg: 0.75rem;
+$btn-padding-x-lg: 1.5rem;
+$btn-font-size-lg: $font-size-lg;
+
+
+// fookuse ülekirjutused
+$focus-ring-width: 4px;
+$focus-ring-opacity: 1;
+$focus-ring-color: blue !important;
+
+*:focus {
+  outline: 4px solid blue !important;
+  box-shadow: 0 0 0 4px rgba(blue, 0.25) !important;
+  border-color: blue !important;
+}

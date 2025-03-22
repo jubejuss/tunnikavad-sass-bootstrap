@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Color Mixing Functions Playground</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CSS Color Mixing Functions Playground</h1>
+        
+        <section class="color-section">
+            <h2>Mix Function</h2>
+            <p>The <code>mix()</code> function blends two colors together.</p>
+            <div class="controls">
+                <div class="color-input">
+                    <label for="mixColor1">Color 1:</label>
+                    <input type="color" id="mixColor1" value="#3498db">
+                </div>
+                <div class="color-input">
+                    <label for="mixColor2">Color 2:</label>
+                    <input type="color" id="mixColor2" value="#e74c3c">
+                </div>
+                <div class="color-input">
+                    <label for="mixPercentage">Mix Percentage:</label>
+                    <input type="range" id="mixPercentage" min="0" max="100" value="50">
+                    <span id="mixPercentageValue">50%</span>
+                </div>
+            </div>
+            <div class="color-demo">
+                <div class="color-box" id="mixColor1Box">Color 1</div>
+                <div class="color-box" id="mixResultBox">Mix Result</div>
+                <div class="color-box" id="mixColor2Box">Color 2</div>
+            </div>
+            <div class="code-example">
+                <pre><code id="mixCode">mix(#3498db, #e74c3c, 50%)</code></pre>
+            </div>
+        </section>
+
+        <section class="color-section">
+            <h2>Lighten & Darken</h2>
+            <p>The <code>lighten()</code> and <code>darken()</code> functions adjust the lightness of a color.</p>
+            <div class="controls">
+                <div class="color-input">
+                    <label for="lightenBaseColor">Base Color:</label>
+                    <input type="color" id="lightenBaseColor" value="#9b59b6">
+                </div>
+                <div class="color-input">
+                    <label for="lightenAmount">Lighten/Darken Amount:</label>
+                    <input type="range" id="lightenAmount" min="0" max="100" value="30">
+                    <span id="lightenAmountValue">30%</span>
+                </div>
+            </div>
+            <div class="color-demo">
+                <div class="color-box" id="lightenBox">Lighten 30%</div>
+                <div class="color-box" id="lightenBaseBox">Base Color</div>
+                <div class="color-box" id="darkenBox">Darken 30%</div>
+            </div>
+            <div class="code-example">
+                <pre><code id="lightenCode">lighten(#9b59b6, 30%)
+darken(#9b59b6, 30%)</code></pre>
+            </div>
+        </section>
+
+        <section class="color-section">
+            <h2>Saturate & Desaturate</h2>
+            <p>The <code>saturate()</code> and <code>desaturate()</code> functions adjust the saturation of a color.</p>
+            <div class="controls">
+                <div class="color-input">
+                    <label for="saturateBaseColor">Base Color:</label>
+                    <input type="color" id="saturateBaseColor" value="#9b59b6">
+                </div>
+                <div class="color-input">
+                    <label for="saturateAmount">Saturate/Desaturate Amount:</label>
+                    <input type="range" id="saturateAmount" min="0" max="100" value="30">
+                    <span id="saturateAmountValue">30%</span>
+                </div>
+            </div>
+            <div class="color-demo">
+                <div class="color-box" id="saturateBox">Saturate 30%</div>
+                <div class="color-box" id="saturateBaseBox">Base Color</div>
+                <div class="color-box" id="desaturateBox">Desaturate 30%</div>
+            </div>
+            <div class="code-example">
+                <pre><code id="saturateCode">saturate(#9b59b6, 30%)
+desaturate(#9b59b6, 30%)</code></pre>
+            </div>
+        </section>
+
+        <section class="color-section">
+            <h2>Adjust-hue</h2>
+            <p>The <code>adjust-hue()</code> function adjusts the hue of a color.</p>
+            <div class="controls">
+                <div class="color-input">
+                    <label for="hueBaseColor">Base Color:</label>
+                    <input type="color" id="hueBaseColor" value="#9b59b6">
+                </div>
+                <div class="color-input">
+                    <label for="hueAmount">Hue Adjustment:</label>
+                    <input type="range" id="hueAmount" min="-180" max="180" value="33">
+                    <span id="hueAmountValue">33°</span>
+                </div>
+            </div>
+            <div class="color-demo">
+                <div class="color-box" id="hueMinusBox">-33° Hue</div>
+                <div class="color-box" id="hueBaseBox">Base Color</div>
+                <div class="color-box" id="huePlusBox">+33° Hue</div>
+            </div>
+            <div class="code-example">
+                <pre><code id="hueCode">adjust-hue(#9b59b6, -33deg)
+adjust-hue(#9b59b6, 33deg)</code></pre>
+            </div>
+        </section>
+
+        <section class="color-section">
+            <h2>Opacity/Alpha Functions</h2>
+            <p>The <code>rgba()</code> and <code>transparentize()</code> functions adjust the opacity of a color.</p>
+            <div class="controls">
+                <div class="color-input">
+                    <label for="opacityBaseColor">Base Color:</label>
+                    <input type="color" id="opacityBaseColor" value="#9b59b6">
+                </div>
+                <div class="color-input">
+                    <label for="opacityAmount">Opacity Amount:</label>
+                    <input type="range" id="opacityAmount" min="0" max="100" value="50">
+                    <span id="opacityAmountValue">50%</span>
+                </div>
+            </div>
+            <div class="color-demo opacity-demo">
+                <div class="color-box" id="opacity25Box">25% Opacity</div>
+                <div class="color-box" id="opacity50Box">50% Opacity</div>
+                <div class="color-box" id="opacity75Box">75% Opacity</div>
+                <div class="color-box" id="opacityBaseBox">100% Opacity</div>
+            </div>
+            <div class="code-example">
+                <pre><code id="opacityCode">rgba(#9b59b6, 0.25)
+rgba(#9b59b6, 0.5)
+rgba(#9b59b6, 0.75)
+rgba(#9b59b6, 1.0)</code></pre>
+            </div>
+        </section>
+
+        <section class="color-section">
+            <h2>Color Picker</h2>
+            <div class="color-picker">
+                <div class="picker-controls">
+                    <div class="color-input">
+                        <label for="color1">Color 1:</label>
+                        <input type="color" id="color1" value="#3498db">
+                    </div>
+                    <div class="color-input">
+                        <label for="color2">Color 2:</label>
+                        <input type="color" id="color2" value="#e74c3c">
+                    </div>
+                    <div class="color-input">
+                        <label for="mixAmount">Mix Amount:</label>
+                        <input type="range" id="mixAmount" min="0" max="100" value="50">
+                        <span id="mixValue">50%</span>
+                    </div>
+                </div>
+                <div class="result-box">
+                    <div id="resultColor" class="result-color"></div>
+                    <div id="resultCode" class="result-code"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 

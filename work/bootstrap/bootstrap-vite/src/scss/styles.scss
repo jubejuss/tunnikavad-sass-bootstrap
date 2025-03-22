@@ -1,0 +1,16 @@
+/* Moodne, aga esialgu keeruline lahendus:  
+@use "custom/variables" as *;
+@use "bootstrap/scss/bootstrap" with (
+  $primary: $primary,
+  $secondary: $secondary,
+  $font-size-base: $font-size-base
+  // Lisa siia teised muutujad, mida soovid üle kirjutada
+); */
+
+// Impordi kohandatud muutujad
+@import "custom/variables";
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+
+// Siia kõik muud, enda loodud stiilid
+

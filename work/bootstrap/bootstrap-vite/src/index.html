@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap w/ Vite</title>
+    <script type="module" src="./js/main.js"></script>
+  </head>
+  <body>
+    <body>
+        <!-- Navigatsiooniriba -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Bootstrap Demo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#avaleht">Avaleht</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#omadused">Omadused</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#komponendid">Komponendid</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#kontakt">Kontakt</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+        <!-- Hero sektsioon -->
+        <section id="avaleht" class="bg-light text-center py-5">
+            <div class="container">
+                <h1 class="display-4 fw-bold">Bootstrapi Võimalused</h1>
+                <p class="lead mb-4">Lihtne ja kiire viis luua mobiilsõbralikke veebilehti</p>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                    <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Tutvu lähemalt</button>
+                    <button type="button" class="btn btn-outline-secondary btn-lg px-4">Dokumentatsioon</button>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Omaduste sektsioon -->
+        <section id="omadused" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Bootstrapi eelised</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="text-center">
+                            <i class="bi bi-phone fs-1 text-primary mb-3"></i>
+                            <h3>Mobiilisõbralik</h3>
+                            <p>Loodud töötama sujuvalt kõikidel seadmetel, suurustest olenemata.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="text-center">
+                            <i class="bi bi-grid-3x3-gap fs-1 text-primary mb-3"></i>
+                            <h3>Võrgustiku süsteem</h3>
+                            <p>Paindlik 12-veeruline võrgustik, et luua keerukaid ja dünaamilisi paigutusi.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="text-center">
+                            <i class="bi bi-building fs-1 text-primary mb-3"></i>
+                            <h3>Valmiskomponendid</h3>
+                            <p>Kasuta valmis komponente nagu navigatsiooniriba, nupud, kaardid ja palju muud.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Komponendid -->
+        <section id="komponendid" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Populaarsed komponendid</h2>
+                
+                <!-- Kaardid -->
+                <div class="row g-4 mb-5">
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <img src="https://picsum.photos/300/200?random=1" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Kaardid</h5>
+                                <p class="card-text">Bootstrapi kaardid on paindlikud konteinerid mitme variandiga.</p>
+                                <a href="#" class="btn btn-primary">Uuri lähemalt</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <img src="https://picsum.photos/300/200?random=2" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Nupud</h5>
+                                <p class="card-text">Bootstrapil on mitmeid nuppude stiile erinevate olekute jaoks.</p>
+                                <a href="#" class="btn btn-primary">Uuri lähemalt</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <img src="https://picsum.photos/300/200?random=3" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Vormid</h5>
+                                <p class="card-text">Bootstapil on paindlikud vormielemendid ja valideerimise stiilid.</p>
+                                <a href="#" class="btn btn-primary">Uuri lähemalt</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Lähemalt/Vaata näidet -->
+                <div class="alert alert-info" role="alert">
+                    <h4 class="alert-heading">Hoiatused!</h4>
+                    <p>Bootstrapiga saab luua erinevaid hoiatuse stiile, mis sobivad kasutajale info edastamiseks.</p>
+                    <hr>
+                    <p class="mb-0">Info, edu, hoiatus ja vea hoiatused on vaid mõned näited.</p>
+                </div>
+                
+                <!-- Progress -->
+                <h4 class="mt-4">Edenemisribad</h4>
+                <div class="progress mb-2" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="width: 25%">25%</div>
+                </div>
+                <div class="progress mb-2" role="progressbar" aria-label="Success example with label" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar bg-success" style="width: 50%">50%</div>
+                </div>
+                <div class="progress mb-2" role="progressbar" aria-label="Warning example with label" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar bg-warning" style="width: 75%">75%</div>
+                </div>
+                <div class="progress" role="progressbar" aria-label="Danger example with label" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar bg-danger" style="width: 100%">100%</div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Kontakt sektsioon -->
+        <section id="kontakt" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Võta ühendust</h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Nimi</label>
+                                <input type="text" class="form-control" id="name" placeholder="Sinu nimi">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">E-post</label>
+                                <input type="email" class="form-control" id="email" placeholder="sinu@email.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Sõnum</label>
+                                <textarea class="form-control" id="message" rows="4" placeholder="Sinu sõnum"></textarea>
+                            </div>
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary">Saada</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Jalus -->
+        <footer class="bg-dark text-white text-center py-4">
+            <div class="container">
+                <p class="mb-0">© 2023 Bootstrap Demo. Kõik õigused kaitstud.</p>
+                <div class="mt-3">
+                    <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-white"><i class="bi bi-github"></i></a>
+                </div>
+            </div>
+        </footer>
+  </body>
+</html>

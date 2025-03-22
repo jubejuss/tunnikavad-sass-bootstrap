@@ -1,0 +1,53 @@
+@use "sass:math";
+@use "sass:color";
+
+// Põhivärvid - Peamised värvid, mida kasutatakse kogu rakenduses
+$primary-base: #3498db;    // Sinine - peamine brändi värv
+$secondary-base: #2ecc71;  // Roheline - sekundaarne brändi värv
+
+// Funktsioon värvi varjundi loomiseks
+// Võtab sisendiks värvi ja protsendi ning tumendab värvi vastavalt protsendile
+@function create-shade($color, $percentage) {
+  @return darken($color, $percentage);
+}
+
+// Funktsioon värvi helenduse loomiseks
+// Võtab sisendiks värvi ja protsendi ning helendab värvi vastavalt protsendile
+@function create-tint($color, $percentage) {
+  @return lighten($color, $percentage);
+}
+
+// Primary värvi varjundid - Erinevad sinise värvi variatsioonid
+$primary-color: $primary-base;                      // Põhiline sinine
+$primary-light: create-tint($primary-base, 15%);    // Heledam sinine (15% heledam)
+$primary-lighter: create-tint($primary-base, 30%);  // Veelgi heledam sinine (30% heledam)
+$primary-dark: create-shade($primary-base, 15%);    // Tumedam sinine (15% tumedam)
+$primary-darker: create-shade($primary-base, 30%);  // Veelgi tumedam sinine (30% tumedam)
+
+// Secondary värvi varjundid - Erinevad rohelise värvi variatsioonid
+$secondary-color: $secondary-base;                      // Põhiline roheline
+$secondary-light: create-tint($secondary-base, 15%);    // Heledam roheline (15% heledam)
+$secondary-lighter: create-tint($secondary-base, 30%);  // Veelgi heledam roheline (30% heledam)
+$secondary-dark: create-shade($secondary-base, 15%);    // Tumedam roheline (15% tumedam)
+$secondary-darker: create-shade($secondary-base, 30%);  // Veelgi tumedam roheline (30% tumedam)
+
+// Teksti värvid - Erinevad hallid toonid teksti jaoks
+$text-color: #333;                           // Põhiline teksti värv (tumehall)
+$text-light: lighten($text-color, 20%);      // Heledam teksti värv
+$text-lighter: lighten($text-color, 40%);    // Veelgi heledam teksti värv
+
+// Tausta värvid - Heledad toonid tausta jaoks
+$background-color: #f8f9fa;                  // Põhiline taustavärv (peaaegu valge)
+$background-dark: darken($background-color, 5%);  // Veidi tumedam taustavärv
+
+// Funktsioon kontrastse teksti värvi valimiseks
+// Arvutab värvi heleduse ja valib sobiva teksti värvi (must või valge)
+// Kasutab W3C valemit värvi heleduse arvutamiseks: https://www.w3.org/TR/AERT/#color-contrast
+@function text-on-color($color) {
+  $brightness: math.div(red($color) * 299 + green($color) * 587 + blue($color) * 114, 1000);
+  @if $brightness > 128 {
+    @return #333; // Tume tekst heledal taustal
+  } @else {
+    @return #fff; // Hele tekst tumedal taustal
+  }
+} 

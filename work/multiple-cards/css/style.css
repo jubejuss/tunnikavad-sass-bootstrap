@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #333;
+  background-color: #f8f9fa;
+  line-height: 1.6;
+  padding: 1rem;
+}
+
+h1, h2, h3 {
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 1rem;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.header__title {
+  color: #3498db;
+}
+.header__title:hover {
+  color: #1d6fa5;
+}
+.header__text {
+  color: #666666;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.card__title {
+  color: #3498db;
+  margin-bottom: 0.5rem;
+}
+.card__content {
+  margin-bottom: 1rem;
+}
+.card__footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #eee;
+  padding-top: 0.5rem;
+}
+.card--featured {
+  border-left: 4px solid #3498db;
+}
+.card--featured .card__title {
+  color: #1d6fa5;
+}
+.card--secondary {
+  border-left: 4px solid #2ecc71;
+}
+.card--secondary .card__title {
+  color: #2ecc71;
+}
+
+.button--primary {
+  background-color: #3498db;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.button--primary:hover {
+  background-color: #217dbb;
+}
+.button--primary:hover {
+  background-color: #1d6fa5;
+}
+.button--secondary {
+  background-color: #2ecc71;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.button--secondary:hover {
+  background-color: #25a25a;
+}
+.button--secondary:hover {
+  background-color: #208e4e;
+}
+.button--secondary:active {
+  background-color: #124f2c;
+}
+.button--light {
+  background-color: #75b9e7;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #333;
+}
+.button--light:hover {
+  background-color: #4aa3df;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+@media (min-width: 768px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.footer {
+  text-align: center;
+  margin-top: 2rem;
+  color: #666666;
+}
+.footer__text {
+  font-size: 0.9rem;
+}
+
+/*# sourceMappingURL=style.css.map */

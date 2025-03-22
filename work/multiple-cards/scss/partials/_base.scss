@@ -1,0 +1,27 @@
+@use 'variables' as v;
+
+// Põhilised stiilid
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: v.$font-primary;
+  color: v.$text-color;
+  background-color: v.$background-color;
+  line-height: 1.6;
+  padding: v.$spacing;
+}
+
+h1, h2, h3 {
+  font-family: v.$font-secondary;
+  margin-bottom: v.$spacing;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: v.$spacing;
+} 

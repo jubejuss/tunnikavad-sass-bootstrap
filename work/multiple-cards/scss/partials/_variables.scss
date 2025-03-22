@@ -1,0 +1,27 @@
+@use 'colors' as c;
+@use "sass:math";
+
+// Fondid
+$font-primary: 'Roboto', sans-serif;
+$font-secondary: 'Open Sans', sans-serif;
+
+// Värvid (imporditud colors.scss failist)
+$primary-color: c.$primary-color;
+$primary-light: c.$primary-light;
+$primary-dark: c.$primary-dark;
+
+$secondary-color: c.$secondary-color;
+$secondary-light: c.$secondary-light;
+$secondary-dark: c.$secondary-dark;
+$secondary-darker: c.$secondary-darker;
+
+$text-color: c.$text-color;
+$text-light: c.$text-light;
+
+$background-color: c.$background-color;
+$background-dark: c.$background-dark;
+
+// Vahed
+$spacing: 1rem;
+$spacing-small: calc($spacing * 0.5);
+$spacing-large: calc($spacing * 2); 

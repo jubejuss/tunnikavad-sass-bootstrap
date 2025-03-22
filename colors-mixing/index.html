@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HSL & HSB Color Converter</title>
+    <link rel="stylesheet" href="color-spaces.css">
+</head>
+<body>
+    <div class="container">
+        <h1>HSL & HSB Color Converter</h1>
+        
+        <div class="color-spaces">
+            <div class="color-ring-container">
+                <div class="color-ring" id="colorRing"></div>
+                <div class="color-indicator" id="colorIndicator"></div>
+            </div>
+
+            <div class="color-preview-box" id="colorPreview"></div>
+
+            <div class="color-sections-container">
+                <section class="color-section hsl-section">
+                    <h2>HSL Color Space</h2>
+                    <div class="controls">
+                        <div class="control-group">
+                            <label for="hslHue">Hue:</label>
+                            <input type="range" id="hslHue" min="0" max="360" value="180">
+                            <input type="number" id="hslHueNumber" min="0" max="360" value="180">
+                        </div>
+                        <div class="control-group">
+                            <label for="hslSaturation">Saturation:</label>
+                            <input type="range" id="hslSaturation" min="0" max="100" value="50">
+                            <input type="number" id="hslSaturationNumber" min="0" max="100" value="50">
+                        </div>
+                        <div class="control-group">
+                            <label for="hslLightness">Lightness:</label>
+                            <input type="range" id="hslLightness" min="0" max="100" value="50">
+                            <input type="number" id="hslLightnessNumber" min="0" max="100" value="50">
+                        </div>
+                    </div>
+                </section>
+
+                <section class="color-section hsb-section">
+                    <h2>HSB/HSV Color Space</h2>
+                    <div class="controls">
+                        <div class="control-group">
+                            <label for="hsbHue">Hue:</label>
+                            <input type="range" id="hsbHue" min="0" max="360" value="180">
+                            <input type="number" id="hsbHueNumber" min="0" max="360" value="180">
+                        </div>
+                        <div class="control-group">
+                            <label for="hsbSaturation">Saturation:</label>
+                            <input type="range" id="hsbSaturation" min="0" max="100" value="50">
+                            <input type="number" id="hsbSaturationNumber" min="0" max="100" value="50">
+                        </div>
+                        <div class="control-group">
+                            <label for="hsbBrightness">Brightness:</label>
+                            <input type="range" id="hsbBrightness" min="0" max="100" value="50">
+                            <input type="number" id="hsbBrightnessNumber" min="0" max="100" value="50">
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <section class="scss-outputs">
+                <h2>SCSS Color Functions</h2>
+                <div class="output-container">
+                    <div class="output-group">
+                        <h3>Lightness Functions</h3>
+                        <pre><code id="lightnessOutput">lighten($color, 20%)
+darken($color, 20%)</code></pre>
+                    </div>
+                    <div class="output-group">
+                        <h3>Saturation Functions</h3>
+                        <pre><code id="saturationOutput">saturate($color, 30%)
+desaturate($color, 30%)
+grayscale($color)</code></pre>
+                    </div>
+                    <div class="output-group">
+                        <h3>Color Values</h3>
+                        <pre><code id="colorValuesOutput">// RGB: rgb(64, 191, 191)
+// HEX: #40BFBF
+// HSB: hsb(180, 50%, 50%)</code></pre>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="color-spaces.js"></script>
+</body>
+</html> 

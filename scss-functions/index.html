@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCSS Color Functions Demo</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SCSS Color Functions</h1>
+        
+        <div class="color-demo">
+            <!-- Color Picker and Preview side by side -->
+            <div class="color-selection-row">
+                <div class="color-picker-container">
+                    <div class="color-picker-label">Select Base Color:</div>
+                    <input type="color" id="colorPicker" value="#00aaaa">
+                </div>
+                
+                <div class="color-preview-box"></div>
+            </div>
+
+            <!-- SCSS Function Controls -->
+            <div class="function-controls">
+                <div class="control-section">
+                    <h2>Hue Function</h2>
+                    <div class="control-group">
+                        <label>Adjust Hue</label>
+                        <input type="range" id="adjustHueAmount" min="-180" max="180" value="0">
+                        <input type="number" id="adjustHueAmountNumber" min="-180" max="180" value="0">
+                    </div>
+                </div>
+                
+                <div class="control-section">
+                    <h2>Lightness Functions</h2>
+                    <div class="control-group">
+                        <label>Lighten</label>
+                        <input type="range" id="lightenAmount" min="0" max="100" value="0">
+                        <input type="number" id="lightenAmountNumber" min="0" max="100" value="0">
+                    </div>
+                    <div class="control-group">
+                        <label>Darken</label>
+                        <input type="range" id="darkenAmount" min="0" max="100" value="0">
+                        <input type="number" id="darkenAmountNumber" min="0" max="100" value="0">
+                    </div>
+                </div>
+
+                <div class="control-section">
+                    <h2>Saturation Functions</h2>
+                    <div class="control-group">
+                        <label>Saturate</label>
+                        <input type="range" id="saturateAmount" min="0" max="100" value="0">
+                        <input type="number" id="saturateAmountNumber" min="0" max="100" value="0">
+                    </div>
+                    <div class="control-group">
+                        <label>Desaturate</label>
+                        <input type="range" id="desaturateAmount" min="0" max="100" value="0">
+                        <input type="number" id="desaturateAmountNumber" min="0" max="100" value="0">
+                    </div>
+                    <div class="control-group">
+                        <label>Grayscale</label>
+                        <button id="grayscaleButton">Apply Grayscale</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Color Values Output -->
+            <div class="color-values">
+                <h2>Color Values</h2>
+                <pre id="colorValuesOutput">
+// RGB: rgb(128, 128, 128)
+// HEX: #808080
+// HSL: hsl(180, 50%, 50%)</pre>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html> 

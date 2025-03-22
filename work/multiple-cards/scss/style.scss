@@ -1,0 +1,125 @@
+// Partialside import
+@use 'partials/variables' as v;
+@use 'partials/mixins' as m;
+@use 'partials/base';
+@use 'partials/colors' as c;
+@use "sass:math";
+
+// Google fondi import
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+// Pealkiri
+.header {
+  text-align: center;
+  margin-bottom: v.$spacing-large;
+  
+  &__title {
+    color: v.$primary-color;
+    
+    &:hover {
+      color: v.$primary-dark;
+    }
+  }
+  
+  &__text {
+    color: v.$text-light;
+  }
+}
+
+// Kaardid
+.card {
+  background-color: white;
+  border-radius: 8px;
+  padding: v.$spacing;
+  margin-bottom: v.$spacing; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  &__title {
+    color: v.$primary-color;
+    margin-bottom: v.$spacing-small;
+  }
+  
+  &__content {
+    margin-bottom: v.$spacing;
+  }
+  
+  &__footer {
+    // Kasutame flex-center mixini, mis seadistab elemendi flex-display'ga ja tsentreerib sisu
+    @include m.flex-center;
+    justify-content: space-between;
+    border-top: 1px solid #eee;
+    padding-top: v.$spacing-small;
+  }
+  
+  &--featured {
+    border-left: 4px solid v.$primary-color;
+    
+    .card__title {
+      color: v.$primary-dark;
+    }
+  }
+  
+  &--secondary {
+    border-left: 4px solid v.$secondary-color;
+    
+    .card__title {
+      color: v.$secondary-color;
+    }
+  }
+}
+
+// Nupud
+.button {
+  &--primary {
+    @include m.button-style(v.$primary-color);
+    
+    &:hover {
+      background-color: v.$primary-dark;
+    }
+  }
+  
+  &--secondary {
+    @include m.button-style(v.$secondary-color);
+    
+    &:hover {
+      background-color: v.$secondary-dark;
+    }
+
+    &:active {
+      background-color: v.$secondary-darker;
+    }
+  }
+  
+  &--light {
+    @include m.button-style(v.$primary-light);
+    color: c.text-on-color(v.$primary-light);
+  }
+}
+
+// Kaartide konteiner
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: v.$spacing;
+  
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+// Jalus
+.footer {
+  text-align: center;
+  margin-top: v.$spacing-large;
+  color: v.$text-light;
+  
+  &__text {
+    font-size: 0.9rem;
+  }
+} 

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>SCSS Näide</title>
+</head>
+<body>
+    <!-- main element tähistab lehe põhisisu -->
+    <main class="container">
+        <!-- Header sobib siia, kuna on selle põhiosa päis, mitte lehtede ülene -->
+        <header class="header">
+            <h1 class="header__title">SCSS Näidisrakendus</h1>
+            <p class="header__text">See on lihtne näide SCSS kasutamisest</p>
+        </header>
+
+        <!-- section element tähistab temaatiliselt seotud sisu gruppi, antud juhul kaartide kollektsiooni -->
+        <section class="cards">
+            <!-- article element tähistab iseseisvat, terviklikku sisu, mis on mõistetav ka eraldiseisvana - iga kaart on omaette sisuüksus. Kuid ee sõltub mitmetest asjadest, näiteks kui on mingid eelvaated vms, siis ma ei kasutaks-->
+            <article class="card card--featured">
+                <h3 class="card__title">SCSS Nesting</h3>
+                <div class="card__content">
+                    <p>SCSS võimaldab CSS-i kirjutada pesastatult, mis teeb koodi loetavamaks.</p>
+                </div>
+                <footer class="card__footer">
+                    <span>Näide</span>
+                    <button class="button button--primary">Loe rohkem</button>
+                </footer>
+            </article>
+
+            <!-- Kaart 2 -->
+            <article class="card card--secondary">
+                <h3 class="card__title">SCSS Partials</h3>
+                <div class="card__content">
+                    <p>Partials võimaldavad SCSS-i jagada eraldi failidesse.</p>
+                </div>
+                <footer class="card__footer">
+                    <span>Näide</span>
+                    <button class="button button--secondary">Loe rohkem</button>
+                </footer>
+            </article>
+
+            <!-- Kaart 3 -->
+            <article class="card">
+                <h3 class="card__title">SCSS Funktsioonid</h3>
+                <div class="card__content">
+                    <p>SCSS funktsioonid võimaldavad luua dünaamilisi väärtusi, nagu värvide varjundid.</p>
+                </div>
+                <footer class="card__footer">
+                    <span>Näide</span>
+                    <button class="button button--light">Loe rohkem</button>
+                </footer>
+            </article>
+        </section>
+
+        <footer class="footer">
+            <p class="footer__text">&copy; 2024 SCSS Näidisrakendus</p>
+        </footer>
+    </main>
+</body>
+</html>
