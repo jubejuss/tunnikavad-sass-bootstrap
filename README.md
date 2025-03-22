@@ -1,6 +1,25 @@
 # 4. seminar
 [Seminari video, kahjuks helita](https://www.youtube.com/watch?v=wkY7_lxf5Es)
 
+## Seminari eesmärgid
+- Tutvustada CSS eeltöötlejate põhimõtete ja eelistega
+- Õppida SCSS-i kasutamist ja struktuuri veebiarenduses
+- Tutvuda BEM metoodikaga koodi organiseerimiseks
+- Anda sissejuhatus Bootstrap raamistikku
+
+## Õpiväljundid
+- Õppija selgitab CSS eeltöötlejate eeliseid traditsioonilise CSS-i ees
+- Tunneb SCSS-i põhiomadusi, süntaksit ja struktuuri
+- Loob ja struktureerib SCSS faile, kasutades muutujaid ja partialeid
+- Rakendab BEM metoodikat koos SCSS-iga
+- Tunneb Bootstrapi põhikomponente ja nende kasutamist
+
+## Tehnilised vahendid
+- Node.js (SCSS kompileerimiseks)
+- VS Code või muu koodiredaktor
+- SCSS kompilaator
+- Bootstrap raamistik (CDN)
+
 ## Sisukord
 - [Seminari ülevaade](#4-seminar)
 - [Sessioonid](#sessioon-1-sissejuhatus-ja-kodutööde-tagasiside)
@@ -93,9 +112,36 @@ See hindamismaatriks aitab hinnata kodutöö erinevaid aspekte järgneva skaalag
 | Kriteerium | Puudub (0p) | On olemas (3p) | On tehtud nii nagu peab (4p) | On lisatud omalt poolt lisasid (5p) |
 | ---------- | ------ | ------------- | -------------------------- | ---------------------------------- |
 | **SCSS kaardi ülesanne** | Ülesanne on tegemata või poolik. | Kaardi põhistruktuur on olemas, kuid SCSS kasutamine on puudulik või sisaldab vigu. | SCSS on korrektselt struktureeritud, muutujad ja partialid on kasutatud vastavalt nõuetele. | Lisatud on täiendavaid funktsionaalsusi (nt hover efektid, mixinid, funktsioonid) või visuaalseid täiustusi. |
-| **Bootstrap leht** | Bootstrap leht on tegemata või olulised osad puuduvad. | Põhikomponendid on olemas, kuid paigutus või responsive disain pole täielik. | Leht järgib Figma visandit, on responsive ja kasutab korrektselt Bootstrapi komponente. | Lisatud on täiendavaid interaktiivseid elemente, animatsioone või kohandatud Bootstrap komponente. |
+| **Bootstrap leht** | Bootstrap leht on tegemata või olulised osad puuduvad. | Põhikomponendid on olemas, kuid paigutus või seadmetundlik disain pole täielik. | Leht on seadmetundlik ja kasutab korrektselt Bootstrapi komponente. | Lisatud on täiendavaid interaktiivseid elemente, animatsioone või kohandatud Bootstrap komponente. |
 | **Refleksioon ja ajakulu** | Refleksioon ja ajakulu dokumentatsioon puudub. | Refleksioon või ajakulu on kirja pandud, kuid pinnapealselt. | Refleksioon ja ajakulu on põhjalikud ning informatiivse sisuga. | Refleksioon sisaldab sügavat analüüsi, konstruktiivseid ettepanekuid või lahendusi kogetud probleemidele. |
 | **Git kasutamine** | Failid on lisatud muul viisil kui Git või töövoog pole selge. | Git on kasutatud, kuid commit sõnumid pole informatiivsed. | Git töövoog on selge ja commit sõnumid on informatiivsed. | Git töövoog on professionaalne, hästi struktureeritud ja järgib häid tavasid. |
-| **GitHub foorum (boonus)** | Foorumis pole osaletud. | Foorumis on tehtud minimaalselt üks postitus. | Foorumis on aktiivselt osaletud, jagades kogemusi ja aidates teisi. | Foorumis on loodud väärtuslikku sisu, mis on aidanud oluliselt kaasa kogukonna õppimisele. |
+| **GitHub foorum (boonus)** |   |   | Foorumis on aktiivselt osaletud, jagades kogemusi ja aidates teisi. | Foorumis on loodud väärtuslikku sisu, mis on aidanud oluliselt kaasa kogukonna õppimisele. |
 
 Maksimumtulemus põhiülesannete eest on 20 punkti. GitHub foorumis osalemine võib anda täiendavalt kuni 5 boonuspunkti.
+
+## Ennastjuhtiva õppija kujundamise strateegiad
+
+### 1. Kogemuspõhine õppimine
+- Võimalus rakendada SCSS-i ja Bootstrapi põhimõtteid praktilistes ülesannetes
+- Teadmiste rakendamine ja testimine reaalsetes projektides
+- Oma kogemuste jagamine GitHub foorumis teistega
+
+### 2. Probleemipõhine õppimine
+- Seadmetundliku veebilehe loomine Bootstrapi abil
+- SCSS struktuuride loomine ja organiseerimine
+- Tehniliste väljakutsete iseseisev lahendamine dokumentatsiooni abil
+
+### 3. Ressursside otsimine ja hindamine
+- Bootstrapi dokumentatsiooni iseseisev uurimine ja rakendamine
+- Erinevate SCSS ressursside ja näidete hindamine ning kasutamine
+- Leitud ressursside ja nende kasulikkuse jagamine GitHub foorumis
+
+### 4. Metakognitsioon
+- Oma õppimisprotsessi dokumenteerimine protsess.md failis
+- Ajakulu jälgimine ja analüüsimine
+- Takistuste ja lahenduste reflekteerimine
+
+### 5. Koostöö ja vastastikune õpetamine
+- Koodi ülevaatamine kaasõppijate töödes
+- Tagasiside andmine ja konstruktiivsete ettepanekute tegemine
+- Aktiivselt küsimustele vastamine ja oma teadmiste jagamine GitHub foorumis
