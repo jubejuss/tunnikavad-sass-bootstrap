@@ -22,6 +22,9 @@ Seminar on aluseks järgmisele seminarile: [Seminari 5](jarelseminar/README.md)
 - SCSS kompilaator
 - Bootstrap raamistik (CDN)
 
+## Seminari harjutused ja abimaterjalid
+Vaata folderitesse `scss-functions`, `scss-color-mixing`, `colors-mixng`
+
 ## Sisukord
 - [Seminari ülevaade](#4-seminar)
 - [Sessioonid](#sessioon-1-sissejuhatus-ja-kodutööde-tagasiside)
