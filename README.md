@@ -119,6 +119,8 @@ See hindamismaatriks aitab hinnata kodutöö erinevaid aspekte järgneva skaalag
 
 Maksimumtulemus põhiülesannete eest on 20 punkti. GitHub foorumis osalemine võib anda täiendavalt kuni 5 boonuspunkti.
 
+Kodune töö on aluseks järgmisele seminarile: [Seminari 5](jarelseminar/README.md)
+
 ## Ennastjuhtiva õppija kujundamise strateegiad
 
 ### 1. Kogemuspõhine õppimine
