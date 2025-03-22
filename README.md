@@ -80,6 +80,7 @@
 - **Teemad:**
   - Bootstrapi seadistamine
   - Üldine tutvustus ja põhielemendid
+Samm-sammuline juhis seminaris tehtu kohta, [**on ka siin**](workbootstrap/bootstrap-cdn/README.md)
 
 ## Kodutöö
 ### Üldine
@@ -88,6 +89,8 @@
 
 ### 1. Seminaris alustatud kaardiga html-lehe lõpetamine
 - [Ülesande juhend](work/simple-card/README.md)
+- Näidis:
+![kaardinäidis](card-example.png)
 - Lõpetada seminaris alustatud kaardiga veebileht
 
 ### 2. Bootstrapi iseseisvalt tundma õppimine
